@@ -1,0 +1,18 @@
+<div id="wrapper">
+  <!--ngIf funciona como un if-->
+  <ngb-carousel *ngIf="images">
+    <!--ng-template ngbSlide necesita copiarme las imagenes directiva de ng boostrap que todo lo que esta englobado en un carusel-->
+    <ng-template ngbSlide>
+      <img [src]="images[0]" alt="Random first slide">
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[1]" alt="Random second slide">
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[2]" alt="Random third slide">
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[3]" alt="Random fourth slide">
+    </ng-template>
+  </ngb-carousel>
+  </div>
